@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BloomWatch 🌸 Bangladesh & Global Focus</title>
+
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+<!-- Heatmap plugin -->
+<script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Styles -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>BloomWatch 🌸 Bangladesh & Global Focus</h1>
+  <p>Interactive flower bloom monitoring using NASA data</p>
+</header>
+
+<section id="map-section">
+  <h2>Interactive Map</h2>
+  <div id="map"></div>
+</section>
+
+<section id="chart-section">
+  <h2>Bloom Prediction Trends</h2>
+  <canvas id="bloomChart"></canvas>
+</section>
+
+<section id="info-section">
+  <h2>About Bloom Monitoring</h2>
+  <p>BloomWatch tracks plant growth using <strong>NDVI</strong> (Normalized Difference Vegetation Index) derived from NASA MODIS satellite data. NDVI shows plant health and helps predict flower bloom events.</p>
+  <p>Data Sources:</p>
+  <ul>
+    <li><a href="https://modis.gsfc.nasa.gov/data/dataprod/mod13.php" target="_blank">MODIS Vegetation Indices</a></li>
+    <li><a href="https://landsat.gsfc.nasa.gov/" target="_blank">Landsat 8/9</a></li>
+    <li><a href="https://power.larc.nasa.gov/" target="_blank">NASA POWER API</a></li>
+    <li><a href="https://observer.globe.gov/" target="_blank">GLOBE Observer</a></li>
+  </ul>
+</section>
+
+<section id="submission-section">
+  <h2>Submit Your Observation</h2>
+  <form id="submissionForm">
+    <input type="number" step="any" placeholder="Latitude" id="lat" required>
+    <input type="number" step="any" placeholder="Longitude" id="lon" required>
+    <input type="text" placeholder="Species Name" id="species" required>
+    <button type="submit">Submit Observation</button>
+  </form>
+  <p id="submissionMsg"></p>
+</section>
+
+<footer>
+  © 2025 Snorita Asrafee | Data © NASA MODIS, Landsat, POWER API, GLOBE Observer
+</footer>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<!-- Script -->
+<script src="script.js"></script>
+</body>
+</html>
