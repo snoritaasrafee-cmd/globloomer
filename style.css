@@ -1,0 +1,81 @@
+/* -------------------- General -------------------- */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f0f8f5;
+  margin: 0;
+  padding: 0;
+  color: #2c3e50;
+  text-align: center;
+}
+
+/* -------------------- Header -------------------- */
+header {
+  background: linear-gradient(to right, #4CAF50, #81C784);
+  color: white;
+  padding: 30px 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  animation: slideDown 1s ease;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* -------------------- Sections -------------------- */
+section {
+  margin: 30px auto;
+  max-width: 95%;
+  background: #ffffffcc;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+section:hover { transform: scale(1.01); }
+
+h1, h2 { margin: 10px 0; }
+
+/* -------------------- Map -------------------- */
+#map { height: 550px; border-radius: 15px; }
+
+/* -------------------- Chart -------------------- */
+#bloomChart { margin-top: 20px; max-width: 100%; }
+
+/* -------------------- Form -------------------- */
+#submission-section form input {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+#submission-section button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#submission-section button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* -------------------- Links -------------------- */
+a { color: #27ae60; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* -------------------- Footer -------------------- */
+footer {
+  margin-top: 40px;
+  padding: 15px;
+  background: #2c3e50;
+  color: white;
+  font-size: 0.9em;
+}
